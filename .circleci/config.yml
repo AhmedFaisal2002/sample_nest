@@ -6,9 +6,9 @@ jobs:
   build_and_test:
     executor: node/default
     steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: yarn
+      # - checkout
+      # - node/install-packages:
+      #     pkg-manager: yarn
       - run:
           command: echo "running test"
           name: Run tests
